@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome:Dashboard</title>
+        <link rel="icon" href="https://th.bing.com/th/id/OIP.JzWcZrQORKPv4TLGS0jRcwHaEo?w=294&h=180&c=7&r=0&o=5&pid=1.7"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+
+<!--        <h1 th:text="'Welcome, '+ ${name}"></h1>-->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dashboard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container my-3 d-flex">
+
+            <div class="card mx-3" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.BmBllWse-ep1LNjERczgrgAAAA?w=269&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="..." width="190" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Spring Boot Java</h5>
+                    <p class="card-text">Java Spring Boot is a popular framework for creating microservices applications. It simplifies development by providing features like dependency injection, autoconfiguration, and embedded servers.</p>
+                    <a href="https://start.spring.io/" class="btn btn-primary">Create Project</a>
+                </div>
+            </div>
+
+            <div class="card mx-3" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.KUjro0G-igf6P3lvlcDrTQHaD_?w=305&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="..." width="190" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">React JS</h5>
+                    <p class="card-text">React JS is a JavaScript library for building user interfaces. It allows you to create reusable UI components, making it easier to develop and maintain complex web applications.</p>
+                    <a href="https://create-react-app.dev/" class="btn btn-primary my-4">Create Project</a>
+                </div>
+            </div>
+
+            <div class="card mx-3" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.oDkmpM5TPGWwG8e9O8G1sQHaF5?w=226&h=180&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="..." width="190" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Bootstrap is a popular front-end framework that simplifies building responsive websites by providing pre-built components and styles.</p>
+                    <a href="https://getbootstrap.com/" class="btn btn-primary my-3">Try Out</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container my-3 d-flex">
+
+            <div class="card mx-3" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.KhbBcUCnTQktMA8MOElBKwAAAA?w=125&h=144&c=7&r=0&o=5&pid=1.7" class="card-img-top" alt="..." width="190" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Tabler Icons</h5>
+                    <p class="card-text">Tabler Icons are a free collection of over 5300 SVG icons designed for web projects, offering easy customization and a consistent style.</p>
+                    <a href="https://tabler.io/" class="btn btn-primary my-3">Try Out</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container my-5">
+
+            <div class="card w-75 mb-3">
+                <div class="card-body">
+                    <div>
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2rYZCh4Lnz5Zh2DP7mFGMAI6iCFnfUlP5HT6mhXZWbaJYdCz_gFqdg0lldpWJ_CB_qbswXNGmsffWimbVsYCFQMve-2zTTQRnI_xBCG4O_dgcUv8TGyZfFEx6chIxh64poTfAwzFSDcpAFVQcMIToo_rbyQazCdoXdCF44RZYYqJ0Br0fH8pulBKE/w71-h71/iconGC%20(1)%20(1)%20(1).png" class="rounded float-end" alt="...">
+                        <h5 class="card-title">Genius Codes</h5>
+                        <p class="card-text">Built with Java Spring Boot & React JS (2024).</p>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex">
+
+                        <a href="#" class="btn btn-outline-primary p-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+                        </a>
+
+                        <a href="https://instagram.com/ak_mulani123" class="btn btn-outline-danger p-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                        </a>
+
+                        <a href="https://github.com/AkramMulani" class="btn btn-outline-secondary p-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                        </a>
+
+                        <a href="https://stackexchange.com/users/26137713/user19827518" class="btn btn-outline-warning p-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-stackoverflow"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-1" /><path d="M8 16h8" /><path d="M8.322 12.582l7.956 .836" /><path d="M8.787 9.168l7.826 1.664" /><path d="M10.096 5.764l7.608 2.472" /></svg>
+                        </a>
+
+                        <a href="https://geniuscodes132.blogspot.com" class="btn btn-outline-danger p-1">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-blogger"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 21h8a5 5 0 0 0 5 -5v-3a3 3 0 0 0 -3 -3h-1v-2a5 5 0 0 0 -5 -5h-4a5 5 0 0 0 -5 5v8a5 5 0 0 0 5 5z" /><path d="M7 7m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h3a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-3a1.5 1.5 0 0 1 -1.5 -1.5z" /><path d="M7 14m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z" /></svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
